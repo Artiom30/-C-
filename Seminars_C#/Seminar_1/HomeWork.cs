@@ -24,7 +24,7 @@ else
 
 // Задача 2:Напишите программу, которая принимает на вход три числа
 //          и выдаёт максимальное из этих чисел.
-
+/*
 Console.Write("Imput first number :");
 int n1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Imput second number :");
@@ -43,3 +43,27 @@ while ( i < 3 )
 }
 
 Console.WriteLine($"Number: {nMax} - the maximum of all numbers." );
+
+// Пользовался информацией с :https://metanit.com/sharp/tutorial/2.4.php.
+*/
+
+// Задача 3. Напишите программу, которая на вход принимает число и 
+//           выдаёт, является ли число чётным 
+//           (делится ли оно на два без остатка).
+
+Console.WriteLine("Imput a number :");
+int n = Convert.ToInt32(Console.ReadLine());
+
+if ( n > 0 )
+    if ( n % 2 == 1)
+{
+        Console.WriteLine("Your number is odd.");
+}
+    else
+{
+        Console.WriteLine("Your number is even.");
+}
+else
+{
+    Console.WriteLine("Your number is less than one.");
+}    
