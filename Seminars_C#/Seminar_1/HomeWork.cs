@@ -50,7 +50,7 @@ Console.WriteLine($"Number: {nMax} - the maximum of all numbers." );
 // Задача 3. Напишите программу, которая на вход принимает число и 
 //           выдаёт, является ли число чётным 
 //           (делится ли оно на два без остатка).
-
+/*
 Console.WriteLine("Imput a number :");
 int n = Convert.ToInt32(Console.ReadLine());
 
@@ -67,3 +67,24 @@ else
 {
     Console.WriteLine("Your number is less than one.");
 }    
+*/
+
+// Задача 4: Напишите программу, которая на вход принимает число (N), 
+//           а на выходе показывает все чётные числа от 1 до N.
+/*
+Console.WriteLine("Imput your namber :");
+int n = Convert.ToInt32(Console.ReadLine());
+int current = 2;
+
+if (n <= 1)
+{
+    Console.WriteLine("Your number is 0 or 1.");
+}
+while (current < n)
+{
+    Console.Write(current + " ,");
+    current = current + 2;
+}
+*/
+// Павел , скажите, нормально ли написана задача 2? просто её можно
+// было подругому написать но мне показалось так легче.
