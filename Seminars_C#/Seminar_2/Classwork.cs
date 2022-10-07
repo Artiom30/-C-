@@ -44,5 +44,6 @@ int RandomNum = new Random().Next(100, 1000);
 Console.WriteLine(RandomNum);
 Console.WriteLine(DelSecDig(RandomNum));
 */
+
 //  Задача 3. Напишите программу, которая принимает на вход число n и проверяет, кратно ли 
 //            оно одновременно a и b(целочисленные делители, также задаются пользователем).
