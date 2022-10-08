@@ -45,5 +45,28 @@ Console.WriteLine(RandomNum);
 Console.WriteLine(DelSecDig(RandomNum));
 */
 
-//  Задача 3. Напишите программу, которая принимает на вход число n и проверяет, кратно ли 
-//            оно одновременно a и b(целочисленные делители, также задаются пользователем).
+//  Задача 3. Напишите программу, которая принимает на вход число n и 
+//            проверяет, кратно ли 
+//            оно одновременно a и b(целочисленные делители, также 
+//            задаются пользователем).
+
+bool Multiple(int n, int a, int b)
+{
+    int remA = n % a;
+    int remB = n % b;
+    int resultRem = remA + remB;
+
+    if (resultRem == 0) return true;
+    else
+        return false;
+}
+
+Console.WriteLine("If the number N is divisible by your numbers, I'll say it's true. ");
+Console.WriteLine("Enter the number to be divided:Imput number ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the first number to divide : ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the second number to divide : ");
+int b = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(Multiple(n, a, b));
