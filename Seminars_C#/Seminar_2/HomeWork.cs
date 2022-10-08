@@ -38,6 +38,7 @@ Console.WriteLine($"Second digit from the number:{res} is {Result}");
 //            78 -> третьей цифры нет
 //            32679 -> 6
 
+/*
 int TreeDigNum(int num)
 {
     int result = 11;
@@ -66,3 +67,33 @@ if (result == 11)
     Console.WriteLine("Your number does not have a third digit.");
 else
     Console.WriteLine($"The third digit of your number is {result}.");
+*/
+
+// Задача 3: Напишите программу, которая принимает на вход 
+//           цифру, обозначающую день недели, и проверяет, является 
+//           ли этот день выходным.
+//           6 -> да
+//           7 -> да
+//           1 -> нет
+
+/*
+bool DayWeek(int num)
+{
+    if (num < 6)
+        return false;
+    else
+        return true;
+}
+
+Console.WriteLine("Hello . I'm a weekend getter.");
+Console.WriteLine("If today is the weekend, I'll say it's true...");
+Console.WriteLine("If it's a weekday, I'll say - false...");
+Console.WriteLine("Enter a number corresponding to the day of the week from 1 to 7 :");
+
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number > 0 && number < 8)
+    Console.WriteLine(DayWeek(number));
+else
+    Console.WriteLine("You have the wrong week =)...");
+*/
