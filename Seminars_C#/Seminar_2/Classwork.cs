@@ -49,7 +49,7 @@ Console.WriteLine(DelSecDig(RandomNum));
 //            проверяет, кратно ли 
 //            оно одновременно a и b(целочисленные делители, также 
 //            задаются пользователем).
-
+/*
 bool Multiple(int n, int a, int b)
 {
     int remA = n % a;
@@ -70,3 +70,4 @@ Console.WriteLine("Enter the second number to divide : ");
 int b = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine(Multiple(n, a, b));
+*/
