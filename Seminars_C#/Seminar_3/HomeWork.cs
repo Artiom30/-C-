@@ -38,6 +38,7 @@ else
 //           3 -> 1, 8, 27
 //           5 -> 1, 8, 27, 64, 125
 
+/*
 void NumberCube(int num)
 {
     int count =1;
@@ -50,3 +51,4 @@ void NumberCube(int num)
 Console.WriteLine("Imput yuor namber: ");
 int number = Convert.ToInt32(Console.ReadLine());
 NumberCube(number);
+*/
