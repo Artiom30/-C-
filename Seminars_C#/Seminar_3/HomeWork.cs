@@ -51,32 +51,36 @@ else
 //           двух точек и находит расстояние между ними в 3D пространстве.
 //                    A (3,6,8); B (2,1,-7), -> 15.84
 //                    A (7,-5, 0); B (1,-1,9) -> 11.53
+/*
+double FindDistanse(double xa, double ya, double za,
+                    double xb, double yb, double zb)
+{
+    double ac = xb - xa;
+    double bc = yb - ya;
+    double zc = zb - za;
 
-// double FindDistanse(double xa, double ya,double za, double xb, double yb, double zb)
-// {
-//     double ac = xb - xa;
-//     double bc = yb - ya;
+    double ab = ac * ac + bc * bc + zc * zc;
+    return Math.Sqrt(ab);
+}
 
-//     double ab = ac * ac + bc * bc;
-//     return Math.Sqrt(ab);
-// }
+Console.Write("Imput X(a) - coordinate: ");
+double xa = Convert.ToDouble(Console.ReadLine());
+Console.Write("Imput Y(a) - coordinate: ");
+double ya = Convert.ToDouble(Console.ReadLine());
+Console.Write("Imput Z(a) - coordinate: ");
+double za = Convert.ToDouble(Console.ReadLine());
+Console.Write("Imput X(b) - coordinate: ");
+double xb = Convert.ToDouble(Console.ReadLine());
+Console.Write("Imput Y(b) - coordinate: ");
+double yb = Convert.ToDouble(Console.ReadLine());
+Console.Write("Imput Z(b) - coordinate: ");
+double zb = Convert.ToDouble(Console.ReadLine());
 
-// Console.Write("Imput X(a) - coordinate: ");
-// double xa = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Imput Y(a) - coordinate: ");
-// double ya = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Imput Z(a) - coordinate: ");
-// double za = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Imput X(b) - coordinate: ");
-// double xb = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Imput Y(b) - coordinate: ");
-// double yb = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Imput Z(b) - coordinate: ");
-// double zb = Convert.ToDouble(Console.ReadLine());
-
-// double ab = FindDistanse(xa, ya, xb, yb);
-// Console.WriteLine("The distance between points = " + ab);
-
+double ab = FindDistanse(xa, ya, za, xb, yb, zb);
+double AB = Math.Round(ab, 2);
+Console.WriteLine("The distance between points = " + AB);
+// Формулу содрал из гугла а как она образована не понял.
+*/
 // Задача 3: Напишите программу, которая принимает
 //           на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 //           3 -> 1, 8, 27
