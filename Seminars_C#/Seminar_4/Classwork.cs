@@ -68,7 +68,7 @@ Console.Write( $"Factorial of numbers from 1 to {a} is {Factorial(a)}");
 */
 //Задача 4: Напишите программу, которая выводит массив из m элементов,
 //          заполненный нулями и единицами в случайном порядке.
-
+/*
 int[] CreateRandomArray(int size, int minValue, int maxValue)     // []  говорит о том что это массив
 {
     int[] array = new int[size];
@@ -96,3 +96,4 @@ int max = Convert.ToInt32(Console.ReadLine());
 
 int[] maArray = CreateRandomArray(size, min, max);
 ShowArray(maArray);
+*/
