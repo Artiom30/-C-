@@ -23,7 +23,7 @@ Console.WriteLine($"Sum of number from 1 to {a} is {s}");
 int Amountnum (int num)
 {
     return num.ToString().Length; // num.ToString() переводит число в строку
-                                  // .Lenght - команда изменяющая количество
+                                  // .Lenght - команда измеряющая количество
                                   // (работает и с массивами)
 }                                  
 
@@ -37,14 +37,14 @@ Console.WriteLine($"Number of digits in a {num} is {Amountnum(num)} ");
 /*
 int AmountNum(int num) 
 {
-  int corrent = 0;
-  while(num > 0) 
-  {
-    num /= 10;  // num = num /10;
-    corrent++;
-  }
+    int corrent = 0;
+    while(num > 0) 
+    {
+        num /= 10;  // num = num /10;
+        corrent++;
+    }
   // return num.ToString().Length;
-  return corrent;
+    return corrent;
 } 
 Console.WriteLine("Imput your number:");
 int num = Convert.ToInt32(Console.ReadLine());
@@ -61,14 +61,14 @@ int Factorial(int num)
   return result;
 }
 
-Console.Write("Input a positive integer number: ");
+Console.Write("Imput a positive integer number: ");
 int a = Convert.ToInt32(Console.ReadLine());
 
 Console.Write( $"Factorial of numbers from 1 to {a} is {Factorial(a)}");
 */
 //Задача 4: Напишите программу, которая выводит массив из m элементов,
 //          заполненный нулями и единицами в случайном порядке.
-/*
+
 int[] CreateRandomArray(int size, int minValue, int maxValue)     // []  говорит о том что это массив
 {
     int[] array = new int[size];
@@ -96,4 +96,3 @@ int max = Convert.ToInt32(Console.ReadLine());
 
 int[] maArray = CreateRandomArray(size, min, max);
 ShowArray(maArray);
-*/

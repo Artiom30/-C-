@@ -21,7 +21,7 @@ int[] CreateRandomArray(int size, int minVal, int maxVal)
 
     return array;
 }
-// Метод создания массива с запросом значений от пользователя в самом массиве
+// Метод создания массива с запросом значений от пользователя в цикле самого метода
 // (от Павла)
 int[] CreateArray(int size)
 {
@@ -135,7 +135,7 @@ bool YourNumber(int[] array, int num)
     }
     return false;
 }
-Console.WriteLine("There are twenty random numbers.");
+Console.WriteLine("There are twenty random numbers in array.");
 int size = 20;
 int min =-100;
 int max = 100;
