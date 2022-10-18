@@ -64,3 +64,29 @@ int size = Convert.ToInt32(Console.ReadLine());
 int[] array = RandomArr(size);
 SumOfOddIndex(array);
 */
+
+// Задача 38: Задайте массив вещественных чисел. Найдите разницу между
+//             максимальным и минимальным элементов массива.
+//             [3 7 22 2 78] -> 76
+
+/*
+void DoubArrDiffMinMax(int size)
+{
+    double[] array = new double[size];
+    double min = 0;
+    double max = 0;
+    for (int i = 0; i < size; i++)
+    {
+        array[i] = Convert.ToDouble(new Random().Next(-10, 11)); // Они то вещественные, но в терминале не видно...
+        Console.Write(array[i] + " ");
+        if (array[i] > max) max = array[i];
+        else if (array[i] < min) min = array[i]; // так писать грамотно?
+    }
+    Console.WriteLine();
+    Console.WriteLine($"The difference between {min} and {max} is {max - min}.");
+}
+
+Console.WriteLine("Specify the number of elements in the array:");
+int size = Convert.ToInt32(Console.ReadLine());
+DoubArrDiffMinMax(size);
+*/
