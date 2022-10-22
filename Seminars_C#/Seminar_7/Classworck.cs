@@ -20,8 +20,8 @@
 
 // Метод для создания двумерного массива со случайными значениями.
 */
-
-// int[,] CreateRandom2DArray()
+/*
+int[,] CreateRandom2DArray()
 {
     Console.WriteLine("Imput number of rows: ");
     int rows = Convert.ToInt32(Console.ReadLine());
