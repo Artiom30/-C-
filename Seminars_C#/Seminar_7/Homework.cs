@@ -1,10 +1,3 @@
-void PrintArray(double[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-        Console.Write(array[i] + " ");
-    Console.WriteLine();
-}
-
 int[,] CreateRandom2DArray()
 {
     Console.WriteLine("Imput number of rows: ");
@@ -29,7 +22,7 @@ void Show2DArray(int[,] array)
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
-            Console.Write(array[i, j] + " ");
+            Console.Write(array[i, j] + "  ");
         Console.WriteLine();
     }
 }
@@ -111,6 +104,7 @@ int column = Convert.ToInt32(Console.ReadLine());
 ContentIndexArray(array, line, column);
 */
 
+/*
 // Задача 3. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое 
 //            элементов в каждом столбце.
 //            Например, задан массив:
@@ -119,30 +113,34 @@ ContentIndexArray(array, line, column);
 //            8 4 2 4
 //            Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-// double[] AverageOfIndexCol2DArray(int[,] array)
-// {
-//     double[] AverageOfIndexColumns = new double[array.GetLength(1)];
-//     double Average = 0;
-//     int sum = 0;
-//     for (int k = 0; k < AverageOfIndexColumns.Length; k++)
-//     {
-//         for (int j = 0; j < array.GetLength(1); j++)
-//         {
-//             Average = 0;    
-//             for (int i = 0; i < array.GetLength(0); i++)
-//             {
-//                 sum = sum + array[i,j];
-//             }    
-//             Average = sum / array.GetLength(1);
-//         }
-//         AverageOfIndexColumns[k] = Average;
-//     }
-//     return AverageOfIndexColumns;
-// }
+double[] AverageOfIndexCol2DArray(int[,] array)
+{
+    double[] AverageOfIndexColumns = new double[array.GetLength(1)];
+    for (int j = 0, k = 0; j < array.GetLength(1) && k < AverageOfIndexColumns.Length; j++, k++)
+    {
+        double sum = 0;
+        double Average = 0;
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            sum += array[i, j];
+        }
+        Average = sum / array.GetLength(0);
+        AverageOfIndexColumns[k] = Math.Round(Average, 2);
+    }
+    return AverageOfIndexColumns;
+}
 
-// int[,] array = CreateRandom2DArray();
-// Show2DArray(array);
+void PrintArray(double[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        Console.Write($"Col{i + 1} ({array[i]}) ");
+    Console.WriteLine();
+}
 
-// double[] AverageOfIndexColumns = AverageOfIndexCol2DArray(array);
-// PrintArray(AverageOfIndexColumns);
+int[,] array = CreateRandom2DArray();
+Show2DArray(array);
 
+Console.WriteLine("Arithmetic mean of each array column:");
+double[] AverageOfIndexColumns = AverageOfIndexCol2DArray(array);
+PrintArray(AverageOfIndexColumns);
+*/
