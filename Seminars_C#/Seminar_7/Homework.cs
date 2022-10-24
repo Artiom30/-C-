@@ -87,11 +87,7 @@ Show2DArrayReal(realArray);
 void ContentIndexArray(int[,] array, int n, int m)
 {
     if (n <= array.GetLength(0) && m <= array.GetLength(1))
-    {
-        for (int i = 0; i < array.GetLength(0); i++)
-            for (int j = 0; j < array.GetLength(1); j++)
-                if (i == n && j == m) Console.WriteLine("In this cell: "+ array[i, j]);
-    }
+        Console.WriteLine("In this cell: "+ array[n, m]);
     else Console.WriteLine("There is no cell with this address in this array.");
 }
 
