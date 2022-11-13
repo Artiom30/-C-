@@ -1,5 +1,5 @@
-// int[,] CreateRandomMarix()
-/*
+
+
 int[,] CreateRandom2DArray()
 {
     Console.WriteLine("Imput number of rows: ");
@@ -28,7 +28,7 @@ void Show2DArray(int[,] array)
         Console.WriteLine();
     }
 }
-*/
+
 // Задача 1: Задайте двумерный массив. Напишите программу, которая упорядочит 
 //           по убыванию элементы каждой строки двумерного массива.
 //           Например, задан массив:
@@ -39,26 +39,28 @@ void Show2DArray(int[,] array)
 //                  7 4 2 1
 //                  9 5 3 2
 //                  8 4 4 2
-
-// void ArrayStingMaxMin(int[,] array)
-// {
-//     for (int i = 0; i < array.GetLength(0); i++)
-//     {
-//         for (int j = 1, maxPosition = j; j < array.GetLength(1); j++)
-//         {
-//             if (array[i, j] > array[maxPosition]) maxPosition = j;
-//         }
-//         int temp = array[i, j];
-//         array[i, j] = array[maxPosition];
-//         array[maxPosition] = temp;
-//     }
-// }
-// int[,] newArray = CreateRandom2DArray();
-// Show2DArray(newArray);
-// Console.WriteLine();
-// ArrayStingMaxMin(newArray);
-// Show2DArray(newArray);
-
+/*
+void ArrayStingMaxMin(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+        for (int j = 0; j < array.GetLength(1); j++)
+        {   
+            int maxj = j;
+            for (int k = j; k < array.GetLength(1); k++)
+            {
+                if (array[i, k] > array[i, maxj]) maxj = k;
+            }
+            int temp = array[i, j];
+            array[i, j] = array[i, maxj];
+            array[i, maxj] = temp;
+        }
+}
+int[,] newArray = CreateRandom2DArray();
+Show2DArray(newArray);
+Console.WriteLine();
+ArrayStingMaxMin(newArray);
+Show2DArray(newArray);
+*/
 
 // Задача 2: Задайте прямоугольный двумерный массив. Напишите программу, 
 //           которая будет находить строку с наименьшей суммой элементов.
