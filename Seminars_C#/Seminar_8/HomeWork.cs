@@ -71,7 +71,54 @@ Show2DArray(newArray);
 //              8 4 2 4
 //              5 2 6 7
 //       Программа считает сумму элементов в каждой строке и выдаёт номер строки с 
-//       наименьшей суммой элементов: 1 строка.
+//       наименьшей суммой элементов: 1 строка. (i + 1)
+/*
+int[,] CreateRandomMarix()
+{
+    Console.WriteLine("Imput a Matrix size: ");
+    int rows = Convert.ToInt32(Console.ReadLine());
+    int columns = rows;
+    Console.WriteLine("Imput a min possible value: ");
+    int minValue = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Imput a max possible value: ");
+    int maxValue = Convert.ToInt32(Console.ReadLine());
+
+    int[,] array = new int[rows, columns];
+
+    for (int i = 0; i < rows; i++)
+        for (int j = 0; j < columns; j++)
+            array[i, j] = new Random().Next(minValue, maxValue + 1);
+    return array;
+}
+
+int EventMinString(int[,] array)
+{
+    int[] sumOfNumsStr = new int[array.GetLength(0)];
+    int minStr = 0;
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        int sum = 0;
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            sum += array[i, j];
+        }
+        sumOfNumsStr[i] = sum;
+    }
+
+    for (int i = 0 ; i < sumOfNumsStr.Length; i++)
+    {
+        if (sumOfNumsStr[i] < sumOfNumsStr[minStr]) minStr = i;
+    }    
+    return minStr + 1;
+
+}
+
+int[,] matrix = CreateRandomMarix();
+Show2DArray(matrix);
+Console.WriteLine();
+int minStr = EventMinString(matrix);
+Console.WriteLine($" The min row is {minStr}");
+*/
 
 // Задача 3: Задайте две матрицы. Напишите программу, которая будет находить
 //            произведение двух матриц.
