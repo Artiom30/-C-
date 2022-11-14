@@ -1,4 +1,5 @@
 ﻿// Семинар 6:
+/*
 int[] CreateRandomArray()
 {
     Console.WriteLine("imput number of elements:");
@@ -22,7 +23,7 @@ void ShowArray(int[] array)
 
     Console.WriteLine();
 }
-
+*/
 // Демонстрация отличия передачи значения переменной напрямую или в методе.
 
 /*
